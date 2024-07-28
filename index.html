@@ -2,18 +2,46 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Gerador de Senha</title>
     <link rel="stylesheet" href="estilo/style.css">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <img src="img/cadeado.png" alt="cadeado">
         <h2>Gerador de Senha</h2>
 
-        <div class="container">
+        <div class="resposta">
             <input type="text" readonly="" id="isenha">
+            <button id="copiar">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="config">
+                <input type="number" name="tamanho" id="itamanho" value="10" min="10" max="100">
+                <label for="itamanho">Número de Caracteres</label>
+            </div>
+            <div class="config">
+                <input type="checkbox" name="maiuscula" id="imaiuscula">
+                <label for="imaiuscula">Letra maiuscula</label>
+            </div>
+            <div class="config">
+                <input type="checkbox" name="minuscula" id="iminuscula">
+                <label for="iminuscula">Letra minuscula</label>
+            </div>
+            <div class="config">
+                <input type="checkbox" name="numero" id="inumero">
+                <label for="inumero">Número</label>
+            </div>
+            <div class="config">
+                <input type="checkbox" name="especial" id="iespecial">
+                <label for="iespecial">Caracter especia</label>
+            </div>
+            <button class="btn">Gerar Senha</button>
         </div>
     </main>
 </body>
