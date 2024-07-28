@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="estilo/style.css">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
 </head>
 <body>
     <main>
         <img src="img/cadeado.png" alt="cadeado">
         <h2>Gerador de Senha</h2>
 
-        <div class="resposta">
+        <div class="resposta" id="iresposta">
             <input type="text" readonly="" id="isenha">
             <button id="copiar">
                 <i class="fa-regular fa-copy"></i>
@@ -41,7 +43,7 @@
                 <input type="checkbox" name="especial" id="iespecial">
                 <label for="iespecial">Caracter especia</label>
             </div>
-            <button class="btn">Gerar Senha</button>
+            <button class="btn" id="igerador">Gerar Senha</button>
         </div>
     </main>
 </body>
